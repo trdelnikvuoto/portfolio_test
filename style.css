@@ -3,6 +3,29 @@ body{
 }
 
 /* PROJECTS */
+.chest-lower{
+    background-image: url(./media/chest-lower.png);
+    background-position: center;
+    background-size: cover;
+    height: 24rem;
+    width: 26rem;
+}
+
+.chest-upper {
+    background-image: url(./media/chest-upper.png);
+    background-position: center;
+    background-size: cover;
+    height: 24rem;
+    width: 26rem;
+    position: relative;
+    transition: 0.4s;
+    top: 0;
+}
+
+.chest-upper:hover{
+    top: -50px;
+}
+
 
 
 /* MENU */
