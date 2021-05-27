@@ -2,7 +2,31 @@ body{
     background-color: #dddddd;
 }
 
+/* NAME */
+.container-name{
+    background-color: #212529;
+    border: 2rem solid #dddddd;
+}
+
+@media screen and (max-width: 992px) {
+    .container-name {
+        margin-bottom: 150px;
+    }
+}
+
 /* PROJECTS */
+.projects-title{
+    font-family: 'Monofett', cursive;
+    color: #212529;
+    font-size: 64px;
+    letter-spacing: 2px;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+}
+
 .chest-lower{
     background-image: url(./media/chest-lower.png);
     background-position: center;
@@ -25,7 +49,6 @@ body{
 .chest-upper:hover{
     top: -50px;
 }
-
 
 
 /* MENU */
@@ -135,4 +158,10 @@ body{
 .container-about{
     background-color: #212529;
     border: 2rem solid #dddddd;
+}
+
+@media screen and (max-width: 992px) {
+    .container-about {
+        margin-top: 200px;
+    }
 }
