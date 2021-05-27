@@ -1,0 +1,115 @@
+body{
+    background-color: #dddddd;
+}
+
+/* PROJECTS */
+
+
+/* MENU */
+.menu{
+    position: relative;
+    background-image: url(./media/menu.png);
+    background-position: center;
+    background-size: cover;
+    height: 24rem;
+    width: 26rem;
+}
+
+.menu-box1{
+    position: absolute;
+    height: 4.3rem;
+    width: 5.3rem;
+    top: 156px;
+    left: 111px;
+    background-image: url(./media/menu-box.png);
+    background-position: center;
+    background-size: cover;
+    color: #dddddd;
+    padding: 20px 0 0 0;
+    transition: 0.4s;
+}
+
+.menu-box2{
+    position: absolute;
+    height: 4.3rem;
+    width: 5.3rem;
+    top: 156px;
+    left: 220px;
+    background-image: url(./media/menu-box.png);
+    background-position: center;
+    background-size: cover;
+    color: #dddddd;
+    padding: 20px 0 0 0;
+    transition: 0.4s;
+}
+
+.menu-box3{
+    position: absolute;
+    height: 4.3rem;
+    width: 5.3rem;
+    top: 234px;
+    left: 111px;
+    background-image: url(./media/menu-box.png);
+    background-position: center;
+    background-size: cover;
+    color: #dddddd;
+    padding: 20px 0 0 0;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.menu-box4{
+    position: absolute;
+    height: 4.3rem;
+    width: 5.3rem;
+    top: 234px;
+    left: 220px;
+    background-image: url(./media/menu-box.png);
+    background-position: center;
+    background-size: cover;
+    color: #dddddd;
+    padding: 20px 0 0 0;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.menu a {
+    color: #dddddd;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.menu-box1:hover, .menu-box2:hover, .menu-box3:hover, .menu-box4:hover{
+    transform: scale(1.5, 1.5);
+    z-index: 2;
+}
+
+.menu-text {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Monofett', cursive;
+    color: #212529;
+    font-size: 32px;
+    position: relative;
+    top: -28px;
+    letter-spacing: 2px;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+    0% {top: -28px;}
+    25% {top: -32px;}
+    50% {top: -36px;}
+    75% {top: -32px;}
+    100% {top: -28px;}
+}
+
+/* ABOUT ME */
+.container-about{
+    background-color: #212529;
+    border: 2rem solid #dddddd;
+}
