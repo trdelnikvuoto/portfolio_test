@@ -33,9 +33,10 @@ body{
     background-size: cover;
     height: 24rem;
     width: 26rem;
+    position: relative;
 }
 
-.chest-upper {
+.chest-upper, .chest-upper2 {
     background-image: url(./media/chest-upper.png);
     background-position: center;
     background-size: cover;
@@ -50,6 +51,35 @@ body{
     top: -50px;
 }
 
+.chest-upper2:hover{
+    top: -50px;
+}
+
+.chest-show, .chest-show2{
+    height: 2rem;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+.chest-col a {
+    color: #212529;
+    text-decoration: none;
+    font-family: 'Monofett', cursive;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 992px) {
+    .chest-col{
+        margin: 30px 0;
+    }
+}
+
+.fa-hand-point-right{
+    position: relative;
+    top: 5px;
+}
 
 /* MENU */
 .menu{
@@ -152,6 +182,11 @@ body{
     50% {top: -36px;}
     75% {top: -32px;}
     100% {top: -28px;}
+}
+
+.menu small {
+    position: relative;
+    top: 360px;
 }
 
 /* ABOUT ME */

@@ -1,3 +1,18 @@
+//PROJECTS
+let chestShow = document.querySelector('.chest-show')
+let chestShow2 = document.querySelector('.chest-show2')
+let chestUpper = document.querySelector('.chest-upper')
+let chestUpper2 = document.querySelector('.chest-upper2')
+
+chestUpper.addEventListener('mouseenter', () => {
+    chestShow.classList.remove('d-none')
+})
+
+chestUpper2.addEventListener('mouseenter', () => {
+    chestShow2.classList.remove('d-none')
+})
+
+
 // MENU CONTACT
 let menuText = document.querySelector('.menu-text')
 let menuBox1 = document.querySelector('.menu-box1')
