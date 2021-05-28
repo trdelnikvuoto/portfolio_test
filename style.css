@@ -1,21 +1,29 @@
 body{
-    background-color: #dddddd;
+    background-color: #f8fafc;
 }
 
 /* NAME */
-.container-name{
+.col-name h1 {
+    font-family: 'Monofett', cursive;
+    color: #212529;
+    font-size: 80px;
+    letter-spacing: 4px;
+}
+
+/* MAIN PROJECTS */
+.container-main-projects{
     background-color: #212529;
-    border: 2rem solid #dddddd;
+    border: 2rem solid #f8fafc;
 }
 
 @media screen and (max-width: 992px) {
-    .container-name {
-        margin-bottom: 150px;
+    .container-main-projects {
+        margin-bottom: 50px;
     }
 }
 
-/* PROJECTS */
-.projects-title{
+/*SMALL PROJECTS */
+.small-projects-title{
     font-family: 'Monofett', cursive;
     color: #212529;
     font-size: 64px;
@@ -100,7 +108,7 @@ body{
     background-image: url(./media/menu-box.png);
     background-position: center;
     background-size: cover;
-    color: #dddddd;
+    color: #f8fafc;
     padding: 20px 0 0 0;
     transition: 0.4s;
 }
@@ -114,7 +122,7 @@ body{
     background-image: url(./media/menu-box.png);
     background-position: center;
     background-size: cover;
-    color: #dddddd;
+    color: #f8fafc;
     padding: 20px 0 0 0;
     transition: 0.4s;
 }
@@ -128,7 +136,7 @@ body{
     background-image: url(./media/menu-box.png);
     background-position: center;
     background-size: cover;
-    color: #dddddd;
+    color: #f8fafc;
     padding: 20px 0 0 0;
     transition: 0.4s;
     font-size: 20px;
@@ -143,14 +151,14 @@ body{
     background-image: url(./media/menu-box.png);
     background-position: center;
     background-size: cover;
-    color: #dddddd;
+    color: #f8fafc;
     padding: 20px 0 0 0;
     font-size: 20px;
     transition: 0.4s;
 }
 
 .menu a {
-    color: #dddddd;
+    color: #f8fafc;
     text-decoration: none;
     transition: 0.4s;
 }
@@ -192,11 +200,11 @@ body{
 /* ABOUT ME */
 .container-about{
     background-color: #212529;
-    border: 2rem solid #dddddd;
+    border: 2rem solid #f8fafc;
 }
 
 @media screen and (max-width: 992px) {
     .container-about {
-        margin-top: 200px;
+        margin-top: 300px;
     }
 }
