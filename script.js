@@ -48,5 +48,49 @@ menuBox4.addEventListener('mouseleave', () => {
     menuText.innerText = 'Contact me'
 })
 
+//ABOUT ME
+let shelfBio = document.querySelector('#bio-pic')
+let shelfHobby = document.querySelector('#hobby-pic')
+let shelfNotes = document.querySelector('#notes-pic')
+let shelfPhoto = document.querySelector('#photo-pic')
+let shelfEmpty = document.querySelector('#empty-shelf')
+
+let linkBio = document.querySelector('#bio')
+let linkHobby = document.querySelector('#hobby')
+let linkNotes = document.querySelector('#notes')
+let linkPhoto = document.querySelector('#photo')
+
+linkBio.addEventListener('click', () => {
+    shelfBio.classList.remove('d-none')
+    shelfHobby.classList.add('d-none')
+    shelfNotes.classList.add('d-none')
+    shelfPhoto.classList.add('d-none')
+    shelfEmpty.classList.add('d-none')
+})
+
+linkHobby.addEventListener('click', () => {
+    shelfBio.classList.add('d-none')
+    shelfHobby.classList.remove('d-none')
+    shelfNotes.classList.add('d-none')
+    shelfPhoto.classList.add('d-none')
+    shelfEmpty.classList.add('d-none')
+})
+
+linkNotes.addEventListener('click', () => {
+    shelfBio.classList.add('d-none')
+    shelfHobby.classList.add('d-none')
+    shelfNotes.classList.remove('d-none')
+    shelfPhoto.classList.add('d-none')
+    shelfEmpty.classList.add('d-none')
+})
+
+linkPhoto.addEventListener('click', () => {
+    shelfBio.classList.add('d-none')
+    shelfHobby.classList.add('d-none')
+    shelfNotes.classList.add('d-none')
+    shelfPhoto.classList.remove('d-none')
+    shelfEmpty.classList.add('d-none')
+})
+
 //COPYRIGHT YEAR
 document.getElementById("year").innerHTML = '&copy; copyright ' + new Date().getFullYear();

@@ -3,6 +3,62 @@ body{
 }
 
 /* NAME */
+.col-nav ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.col-nav a{
+    text-decoration: none;
+    margin: 0 2rem 0 0;
+    color: #212529;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.col-nav a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+}
+
+.btn-nav{
+    background-color: #212529;
+    height: 2rem;
+    color: #f8fafc;
+    border: none;
+    text-transform: uppercase;
+}
+
+.card-nav{
+    margin-top: 20px;
+}
+
+.card-nav ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.card-nav li{
+    margin-bottom: 10px;
+}
+
+.card-nav a{
+    text-decoration: none;
+    color: #212529;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-nav a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+}
+
 .col-name h1 {
     font-family: 'Monofett', cursive;
     color: #212529;
@@ -10,7 +66,25 @@ body{
     letter-spacing: 4px;
 }
 
+@media screen and (max-width: 450px) {
+    .col-name h1{
+        font-size: 60px;
+    }
+}
+
 /* MAIN PROJECTS */
+.main-projects-title{
+    font-family: 'Monofett', cursive;
+    color: #f8fafc;
+    font-size: 64px;
+    letter-spacing: 3px;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+}
+
 .container-main-projects{
     background-color: #212529;
     border: 2rem solid #f8fafc;
@@ -19,6 +93,7 @@ body{
 @media screen and (max-width: 992px) {
     .container-main-projects {
         margin-bottom: 50px;
+        border: 1rem solid #f8fafc;
     }
 }
 
@@ -198,13 +273,62 @@ body{
 }
 
 /* ABOUT ME */
+.about-title{
+    font-family: 'Monofett', cursive;
+    color: #f8fafc;
+    font-size: 64px;
+    letter-spacing: 3px;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+}
+
 .container-about{
     background-color: #212529;
     border: 2rem solid #f8fafc;
 }
 
+.col-about p {
+    color: #f8fafc;
+    font-weight: bold;
+}
+
+.col-about ul{
+    list-style: none;
+    padding: 0;
+    color: #f8fafc;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.col-about li{
+    display: inline-block;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.col-about li:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+}
+
 @media screen and (max-width: 992px) {
     .container-about {
         margin-top: 300px;
+        border: 1rem solid #f8fafc;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .main-projects-title, .small-projects-title, .about-title{
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-about{
+        height: 100vh;
     }
 }

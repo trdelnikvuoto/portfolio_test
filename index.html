@@ -17,7 +17,30 @@
   <body>
 
     <div class="container container-name vh-100">
-      <div class="row h-100 justify-content-center align-items-center">
+      <div class="row h-100 justify-content-center">
+        <div class="col-12 col-nav justify-content-center d-none d-md-flex">
+          <ul>
+            <li><a href="#main-projects">main Projects</a></li>
+            <li><a href="#small-projects">small projects</a></li>
+            <li><a href="#about">about me</a></li>
+            <li><a href="#contacts">contact me</a></li>
+          </ul>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center flex-column d-md-none">
+          <button class="btn-nav" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card-nav">
+              <ul>
+                <li><a href="#main-projects">main Projects</a></li>
+                <li><a href="#small-projects">small projects</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#contacts">contact me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="col-12 col-name">
           <h1 class="text-center">Gabriele Greco</h1>
         </div>
@@ -29,19 +52,16 @@
 
 
     <!-- PROJECTS -->
-    <div class="container-fluid vh-100 container-main-projects">
+    <div id="main-projects" class="container-fluid vh-100 container-main-projects">
       <div class="row p-5 h-100">
-        <div class="col-12 col-md-6 p-3">
-  
-        </div>
-        <div class="col-12 col-md-6 p-3">
-
+        <div class="col-12">
+          <h2 class="text-center main-projects-title">Main Projects</h2>
         </div>
       </div>
     </div>
 
     <!-- SMALL PROJECTS -->
-    <div class="container vh-100 container-small-projects">
+    <div id="small-projects" class="container vh-100 container-small-projects">
       <div class="row align-items-center justify-content-center h-100">
 
         <div class="col-12">
@@ -73,19 +93,30 @@
 
 
     <!-- ABOUT ME -->
-    <div class="container-fluid vh-100 container-about">
-      <div class="row p-5 h-100">
-        <div class="col-12 col-md-6 p-3">
-  
+    <div id="about" class="container-fluid container-about">
+      <div class="row h-100">
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center text-center col-about p-5">
+          <h2 class="text-center about-title mt-5">About me</h2>
+          <ul class="mb-5">
+            <li id="bio">Bio</li>
+            <li id="hobby">Hobby</li>
+            <li id="notes">Notes</li>
+            <li id="photo">Photo</li>
+          </ul>
+          <p id="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, unde reprehenderit? Blanditiis laboriosam reprehenderit culpa eos in maxime nisi. Tenetur iure quisquam earum perferendis perspiciatis dignissimos. Similique rem ducimus animi.</p>
         </div>
-        <div class="col-12 col-md-6 p-3">
-
+        <div class="col-12 col-lg-6 mb-5 d-flex flex-column justify-content-center align-items-center col-about2">
+          <img id="empty-shelf" class="img-fluid" src="./media/books.png" alt="books">
+          <img id="bio-pic" class="img-fluid d-none" src="./media/books_bio.png" alt="books">
+          <img id="hobby-pic" class="img-fluid d-none" src="./media/books_hobby.png" alt="books">
+          <img id="notes-pic" class="img-fluid d-none" src="./media/books_notes.png" alt="books">
+          <img id="photo-pic" class="img-fluid d-none" src="./media/books_photo.png" alt="books">
         </div>
       </div>
     </div>
 
     <!-- CONTACTS MENU -->
-    <div class="container vh-100">
+    <div id="contacts" class="container vh-100">
         <div class="row align-items-center h-100">
 
             <div class="col-12 menu mx-auto">
