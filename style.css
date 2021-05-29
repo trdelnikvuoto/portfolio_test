@@ -1,8 +1,17 @@
 body{
     background-color: #f8fafc;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 /* NAME */
+.container-name{
+    background-image: url(./media/lamps.png);
+    background-position: center;
+    background-size: cover;
+    border-left: 2rem solid #f8fafc;
+    border-right: 2rem solid #f8fafc;
+}
+
 .col-nav ul{
     list-style: none;
     margin: 0;
@@ -66,9 +75,19 @@ body{
     letter-spacing: 4px;
 }
 
+.col-name h2 {
+    color: #212529;
+    font-size: 32px;
+}
+
 @media screen and (max-width: 450px) {
     .col-name h1{
         font-size: 60px;
+    }
+
+    .col-name h2 {
+        font-size: 22px;
+        margin-top: 20px;
     }
 }
 
@@ -85,6 +104,10 @@ body{
     animation-timing-function: ease-out;
 }
 
+.container-main-projects p{
+    color: #f8fafc;
+}
+
 .container-main-projects{
     background-color: #212529;
     border: 2rem solid #f8fafc;
@@ -94,6 +117,11 @@ body{
     .container-main-projects {
         margin-bottom: 50px;
         border: 1rem solid #f8fafc;
+    }
+
+    .container-name{
+        border-right: 1rem solid #f8fafc;
+        border-left: 1rem solid #f8fafc;
     }
 }
 
@@ -312,6 +340,11 @@ body{
 .col-about li:hover{
     text-decoration: underline;
     text-decoration-thickness: 0.2rem;
+}
+
+#about-text small{
+    font-size: 10px;
+    font-style: italic;
 }
 
 @media screen and (max-width: 992px) {
