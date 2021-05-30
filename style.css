@@ -3,6 +3,18 @@ body{
     font-family: 'JetBrains Mono', monospace;
 }
 
+.up{
+    position: fixed;
+    bottom: 8%;
+    right: 3%;
+    width: 40px;
+    height: 40px;
+    background-image: url(./media/up.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
 /* NAME */
 .container-name{
     background-image: url(./media/lamps.png);
@@ -104,6 +116,24 @@ body{
     animation-timing-function: ease-out;
 }
 
+.col-tv{
+    position: relative;
+}
+
+.main-projects-pic{
+    width: 480px;
+    height: 432px;
+    border: double 10px #f8fafc;
+    border-radius: 25px;
+}
+
+.main-projects-pic a {
+    color: #f8fafc;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .container-main-projects p{
     color: #f8fafc;
 }
@@ -111,6 +141,13 @@ body{
 .container-main-projects{
     background-color: #212529;
     border: 2rem solid #f8fafc;
+}
+
+.covid-background{
+    background-size: cover;
+    background-position: center;
+    background-image: url(./media/covid_dashboard.png);
+    filter: grayscale(100%);
 }
 
 @media screen and (max-width: 992px) {
@@ -122,6 +159,17 @@ body{
     .container-name{
         border-right: 1rem solid #f8fafc;
         border-left: 1rem solid #f8fafc;
+    }
+
+    .col-tv{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .main-projects-pic{
+        height: 232px;
+        width: 280px;
     }
 }
 
@@ -361,7 +409,7 @@ body{
 }
 
 @media screen and (min-width: 992px) {
-    .container-about{
+    .container-about, .container-main-projects{
         height: 100vh;
     }
 }

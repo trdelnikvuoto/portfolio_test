@@ -1,3 +1,20 @@
+let up = document.querySelector('.up')
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    up.style.display = "block";
+  } else {
+    up.style.display = "none";
+  }
+}
+
+up.addEventListener('click', () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+})
+
 //PROJECTS
 let chestShow = document.querySelector('.chest-show')
 let chestShow2 = document.querySelector('.chest-show2')
@@ -10,6 +27,17 @@ chestUpper.addEventListener('mouseenter', () => {
 
 chestUpper2.addEventListener('mouseenter', () => {
     chestShow2.classList.remove('d-none')
+})
+
+let covidLink = document.querySelector('#covid-dashboard')
+let mainProjectsPic = document.querySelector('.main-projects-pic')
+
+covidLink.addEventListener('mouseenter', () =>{
+    mainProjectsPic.classList.add('covid-background')
+})
+
+covidLink.addEventListener('mouseleave', () =>{
+    mainProjectsPic.classList.remove('covid-background')
 })
 
 
